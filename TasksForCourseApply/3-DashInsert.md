@@ -1,13 +1,22 @@
 # DashInsert
 
-You have to implement DashInsert(num).
+You have to implement a function with the following signature - `dashInsert(num)`
 
-Insert dashes ('-') between each two odd numbers in num. Don't count zero as an odd number.
-You can use any language you know.
+* The argument `num` is of type integer.
+* The function should return a string
+
+
+Insert dashes `'-'` between each two neighboring odd numbers in `num`. 
+
+Don't count zero as an odd number.
+
+**You can use any language you know.**
 
 Examples:
 
-```
-Input = 99946 Output = "9-9-946"
-Input = 56730 Output = "567-30"
+```python
+dashInsert(99946)
+"9-9-946"
+dashInsert(56730)
+"567-30"
 ```
