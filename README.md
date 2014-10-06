@@ -1,11 +1,39 @@
-Programming101-2
-================
+# Programming101 v2
 
-The second issue of the Programming 101 course which covers Python, Linux and Git. The course starts October 2014 and is part of http://hackbulgaria.com
+    ______                                              _               __  _____  __  
+    | ___ \                                            (_)             /  ||  _  |/  |
+    | |_/ / __ ___   __ _ _ __ __ _ _ __ ___  _ __ ___  _ _ __   __ _  `| || |/' |`| |
+    |  __/ '__/ _ \ / _` | '__/ _` | '_ ` _ \| '_ ` _ \| | '_ \ / _` |  | ||  /| | | |
+    | |  | | | (_) | (_| | | | (_| | | | | | | | | | | | | | | | (_| | _| |\ |_/ /_| |_
+    \_|  |_|  \___/ \__, |_|  \__,_|_| |_| |_|_| |_| |_|_|_| |_|\__, | \___/\___/ \___/
+                     __/ |                                       __/ |
+                    |___/                                       |___/
+
+![Harry Potter Python](http://i.imgur.com/KGrV41o.png "It's cool, isn't it?")
+
+The second issue of the Programming 101 course which covers Python, Linux and Git. The course is part of [HackBulgaria](http://hackbulgaria.com).
+The course syllabus in bulgarian can be seen [here](https://hackbulgaria.com/course/Prog101-2/).
+
+
+## How to use this repository
+
+This repo will include weeks, exams, tasks and solutions for the course.
+
+
+They'll be separated like:
+
+* Weeks - `^week\d+`, ex. week0, week1 and etc.
+
+* Exams will be grouped in one folder `exams`, that will contain folders of the exams - `^exams/exam\d+`,
+ex. `exams/exam1`, `exams/exam1` and etc.
+
+* Tasks may be in week or exam folders - `^(week\d|exam\d)/(\d-.+)`, ex. `week0/1-Hello-World`, `exam1/5-Python-Party`
+
+
+**Every folder** will have a `README.md` file, but **weeks may also have** `materials.md` files that serve as pre-reading material,
+for that week.
 
 ## Course Program
-
-This is a draft version, that will be updated over time until the course starts.
 
 We are going to work with a console & text editor a lot. Linux is a mandatory operating system for this course.
 
