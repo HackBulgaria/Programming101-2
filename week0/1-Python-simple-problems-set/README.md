@@ -518,6 +518,194 @@ True
 False
 ```
 
+## Zero Insertion
+
+Given an integer, implement a function, called `zero_insert(n)`, which returns a new integer, constructed by the following algorithm:
+
+* If two neighboring digits are the same (like `55`), insert a 0 between them (`505`)
+* Also, if we add two neighboring digits and take their module by 10 (`% 10`) and the result is 0 - add 0 between them.
+
+For example, if we have the number `116457`, result will be: `10160457`:
+
+* 1 and 1 are the same, so we insert 0 between them
+* `6 + 4 % 10 = 0`, so we insert 0 between them.
+
+
+### Examples
+
+```python
+zero_insert(116457)
+10160457
+zero_insert(55555555)
+505050505050505
+zero_insert(1)
+1
+zero_insert(6446)
+6040406
+```
+
+## Sum Numbers in Matrix
+
+You are given a `NxM` matrix  of integer numbers.
+
+Implement a function, called `sum_matrix(m)` that returns the sum of all numbers in the matrix.
+
+The matrix will be represented as nested lists in python.
+
+### Examples:
+
+```python
+>>> m = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+>>> sum_matrix(m)
+45
+>>> m = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+>>> sum_matrix(m)
+0
+>>> m = [[1, 2], [3, 4], [5, 6], [7, 8], [9, 10]]
+>>> sum_matrix(m)
+55
+```
+
+## Matrix Bombing
+
+You are givn a `NxM` matrix of integer numbers.
+
+We can drop a bomb at any place in the matrix, which has the following effect:
+
+* All of the 8 neighbours of the target are reduced by the value of the target.
+* Numbers can be reduced only to 0 - they cannot go to negative.
+
+For example, if we have the following matrix:
+
+```
+10 10 10
+10  9  10
+10 10 10
+```
+
+and we drop bomb at `9`, this will result in the following matrix:
+
+```
+1 1 1
+1 9 1
+1 1 1
+```
+
+Implement a function called `matrix_bombing_plan(m)`.
+
+The function should return a dictionary where keys are positions in the matrix, represented as tuples, and values are the total sum of the elements of the matrix, after the bombing at that position.
+
+The positions are the standard indexes, starting from `(0, 0)`
+
+For example if we have the following matrix:
+
+```
+1 2 3
+4 5 6
+7 8 9
+```
+
+and run the function, we will have:
+
+```python
+{(0, 0): 42,
+ (0, 1): 36,
+ (0, 2): 37,
+ (1, 0): 30,
+ (1, 1): 15,
+ (1, 2): 23,
+ (2, 0): 29,
+ (2, 1): 15,
+ (2, 2): 26}
+```
+
+We can see that if we drop the bomb at `(1, 1)` or `(2, 1)`, we will do the most damage!
+
+## Hack Numbers
+
+A hack number is an integer, that matches the following criteria:
+
+* The number, represented in binary, is a palindrom
+* The number, represented in binary, has an odd number of 1's in it
+
+Example of hack numbers:
+
+* 1 is `1` in binary
+* 7 is `111` in binary
+* 7919 is `1111011101111` in binary
+
+Implement a function, called `next_hack(n)` that takes an integer and returns the next hack number, that is bigger than `n`
+
+### Examples
+
+```python
+>>> next_hack(0)
+1
+>>> next_hack(10)
+21
+>>> next_hack(8031)
+8191
+```
+
+## NaN Expand
+
+In most programming languages, `NaN` stands for `Not a Number`
+
+If we take a look at the following JavaScript code:
+
+```javascript
+typeof NaN === 'number' // true
+```
+
+We will see that in JavaScript, `NaN` stands for `Not a NaN`, which is recursive by nature.
+
+Implement a python function, called `nan_expand(times)`, which returns the expansion of `NaN` (In JavaScript terms :P) that many `times`
+
+For example:
+
+* If we expand `NaN` once (`times=1`), we will have `"Not a NaN"`
+* If we expand `NaN` twice (`times=2`), we will have `"Not a Not a NaN"`
+* If `times=3`, we have `"Not a Not a Not a NaN"`
+* And so on ...
+
+### Examples
+
+```python
+>>> nan_expand(0)
+""
+>>> nan_expand(1)
+"Not a NaN"
+>>> nan_expand(2)
+"Not a Not a NaN"
+>>> nan_expand(3)
+"Not a Not a Not a NaN"
+```
+
+## Iterations of NaN Expand
+
+Implement a function, called `iterations_of_nan_expand(expanded)` that takes a string `expanded`, which is an unkown iteration of NaN Expand (check the problem for more information)
+
+The function should return the number of iterations that have been made, in order to get to `expanded`
+
+For example, if we have `"Not a Not a Not a NaN"` - this is the 3rd iteration of `NaN`
+
+**If `expanded` is not a valid NaN expand string, the function should return false! (This is the hard part)**
+
+### Examples
+
+```python
+>>> iterations_of_nan_expand("")
+0
+>>> iterations_of_nan_expand("Not a NaN")
+1
+>>> iterations_of_nan_expand('Not a Not a Not a Not a Not a Not a Not a Not a Not a Not a NaN')
+10
+>>> iterations_of_nan_expand("Show these people!")
+False
+```
+
+
+
 ## Integer prime factorization
 
 Given an integer ```n```, we can factor it in the following form:
