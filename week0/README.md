@@ -37,7 +37,7 @@ The most popular linux distributions are Ubuntu, Debian, Arch, Fedora and openSU
 We're going to use [Ubuntu 14.04](http://www.ubuntu.com/download/desktop), which is based on Debian and has the largest community
 and fewest drivers problems ;).
 
-
+[Linux Bash Cheat Sheet](http://cli.learncodethehardway.org/bash_cheat_sheet.pdf)
 
 ## TL;DR
 
