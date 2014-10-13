@@ -1,14 +1,32 @@
-# Polyglot
+Polyglot
+========
 
-Clone the Polyglot repo: https://github.com/HackBulgaria/Polyglot.git
+The problem where you meet new languages and compile them, to solve a puzzle!
 
-## 1. Run the program polyglot.py
+## How to run the program?
+
+To start everything, type:
+
 ```
 $ python3 polyglot.py
+
+Hello and Welcome!
+I am the compiler.
+You can ask me to output different source files.
+I will provide guides for compiling too.When you are ready, you can provide me with the answer from the code.
+And I will reveal a secret to you!
+Type help, to get you started.
+Enter command>
+
 ```
 
-## 2. Learn how to use it. Use the help command.
+Now you can enter different commands in order to start the task:
 
-## 3. Run all the programs and scripts in the repo to get the secret answer for every program. 
+* `help` command will list you everything
+* `list` command will give you all languages and their status
+* `start <number>` will create a new folder with the given language. It is time to solve the language puzzle! (Ctrl-C to exit `polyglot.py`)
+* `answer <number> <answer>` - When you are ready with the given language, you can check if you answer is right.
 
-## 4. Thel the polyglot.py what is the secret answer.
+Good luck!
+
+Use Google & `apt-get`
