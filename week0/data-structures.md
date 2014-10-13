@@ -1,22 +1,23 @@
 # Data Structures
 
-As you may already have noticed python3 data structures are way different then C++ structures that you are used to.
+As you may have already noticed, Python3 data structures are way different than the C++ structures you know.
 List stores pointers to elements.
+
 
 ## List
 
-It dose not work like a traditional array. It is heterogeneous!
+It does not work like a traditional array. It is heterogeneous!
 
 ```python
 hacker_things = [1, 2, 3, 'Ivan', [10, 'Hack']]
 ```
 
-We can index elements:
+We can get elements by index:
 ```python
 print(hacker_things[3]) # Ivan
 ```
 
-We can iterate them:
+We can iterate:
 ```python
 for thing in hacker_things:
     print('I tend to like ' + thing)
@@ -24,7 +25,9 @@ for thing in hacker_things:
 
 You can look at the list's interface here: https://docs.python.org/3.4/tutorial/datastructures.html#more-on-lists
 
+
 ## Tuple
+
 Tuples are much like lists but __they are immutable!__
 
 super_heroes = ('Hackman', 'Spiderman', 'Hulk')
@@ -37,10 +40,15 @@ Traceback (most recent call last):
 TypeError: 'tuple' object does not support item assignment
 ```
 
-## Set
-Go get your math books. This is a real set. 
+The interface is identical to a list's. You can see it action [here](https://docs.python.org/3.4/tutorial/datastructures.html#tuples-and-sequences)
 
-A set is an unordered collection with no duplicate elements. Basic uses include membership testing and eliminating duplicate entries. Set objects also support mathematical operations like union, intersection, difference, and symmetric difference.
+
+## Set
+Go get your math books. This is a real set.
+
+A set is an unordered collection with no duplicate elements.
+Basic usage includes membership testing and eliminating duplicate entries.
+Set objects also support mathematical operations like `union`, `intersection`, `difference`, and `symmetric difference`.
 
 
 ```python
@@ -52,8 +60,11 @@ rappers.add('Eminem')
 print(rappers) # {'Jay-Z', 'Eminem'}
 ```
 
+You can see more sets usage [here](https://docs.python.org/3.4/tutorial/datastructures.html#sets).
+
+
 ## Dictionaries
-__Hash table!__
+__Are hash tables, also known as associative arrays!__
 
 
 ```python
@@ -66,10 +77,17 @@ youtube_views = {
 print(youtube_views['Waka Waka']) # 746709408
 ```
 
-We can add some values and there is no order too.
+Values are added by assigning them to `keys`.
 
 ```python
 youtube_views['Wrecking Ball'] = 709604432
+```
+If that `key` already exists, the value held by that key will be replaced.
 
-print(youtube_views) # { 'Wrecking Ball': 709604432 , 'Gangnam Style': 2096709806, 'Waka Waka': 746709408, 'Baby': 1091538504}
+```python
+youtube_views['Wrecking Ball'] = 859604432
+```
+
+```python
+print(youtube_views) # { 'Wrecking Ball': 859604432 , 'Gangnam Style': 2096709806, 'Waka Waka': 746709408, 'Baby': 1091538504}
 ```
