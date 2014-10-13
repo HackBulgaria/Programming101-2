@@ -10,8 +10,8 @@ We're going to use CPython 3.3+, the default Python interpreter.
 
 You can install python3.3+ using your package manager.
 
-```
-	$ sudo apt-get install python3
+```shell
+$ sudo apt-get install python3
 ```
 
 At the end of the process you should see:
@@ -40,6 +40,10 @@ After you've installed Sublime Text 3, install packages:
 
 To install a package watch [Sublime Text 3: Installing Package Control Part II](https://www.youtube.com/watch?v=Y1f6BuSdP_c)
 and in the newly opened bar, type the package name and press Enter.
+
+
+We recommend [these Sublime Text settings](https://github.com/HackBulgaria/Programming101-2/blob/master/config/Preferences.sublime-settings).
+
 
 ### Github Atom (the alternative and future)
 
@@ -99,7 +103,7 @@ if __name__ == '__main__':
 
 After this, you can just call the program with your python interpreter:
 
-```bash
-$ python solution.py
+```shell
+$ python3 solution.py
 4
 ```
