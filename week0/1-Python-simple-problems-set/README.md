@@ -1,10 +1,10 @@
-A bunch of simple problems, to warm up with Python. Those are the regular programming problems, that you meet in every beginners course.
+A bunch of simple problems to warm up with Python. These are the regular programming problems, that you meet in every beginners course.
 
 The solutions should be written for Python 3.* version.
 
 ## N-th Fibonacci
 
-The most annoying problem of all. Implement a function, called ```nth_fibonacci(n)``` that returns the n-th fibonacci number, given by the argument.
+The most annoying problem of all. Implement a function, called `nth_fibonacci(n)` that returns the n-th fibonacci number, given by the argument.
 
 ### Signature
 
@@ -29,14 +29,14 @@ def nth_fibonacci(n):
 
 ## Sum all digits of a number
 
-Given an integer, implement a function, called ```sum_of_digits(n)``` that calculates the sum of the digits of n.
+Given an integer, implement a function, called `sum_of_digits(n)` that calculates the sum of `n`'s digits.
 
 If a negative number is given, the function should work as if it was positive.
 
-For example, if n is ```1325132435356```, the digit's sum is 43.
-If n is -10, the sum is 1 + 0 = 1
+For example, if `n` is ```1325132435356```, the digit's sum is 43.
+If `n` is -10, the sum is 1 + 0 = 1.
 
-Keep in mind that in Python, there is a special operator for integer division:
+Keep in mind that in Python, there is a special operator for integer division!
 
 ```
 >>> 5 / 2
@@ -67,10 +67,10 @@ def sum_of_digits(n):
 
 ## Sum all divisors of an integer
 
-Given an integer, implement a function, called ```sum_of_divisors(n)``` that calculates the sum of all divisors of n.
+Given an integer, implement a function, called `sum_of_divisors(n)` that calculates the sum of all divisors of `n`.
 
-For example, the divisors of 8 are 1,2,4 and 8 and ```1 + 2 + 4 + 8 = 15```
-The divisors of 7 are 1 and 7, which makes the sum = 8
+For example, the divisors of 8 are 1, 2, 4 and 8 and `1 + 2 + 4 + 8 = 15`.
+The divisors of 7 are 1 and 7, which makes the sum = 8.
 
 ### Signature
 
@@ -94,9 +94,10 @@ def sum_of_divisors(n):
 
 ## Check if integer is prime
 
-Given an integer, implement a function, called ```is_prime(n)``` which returns True if n is a prime number. You should handle the case with negative numbers too.
+Given an integer, implement a function, called `is_prime(n)` which returns True if `n` is a prime number.
+You should handle the case with negative numbers too.
 
-A primer number is a number, that is divisible only by 1 and itself.
+A prime number is a number, that is divisible only by 1 and itself.
 
 1 is not considered to be a prime number. [If you are curious why, find out here.](http://www.youtube.com/watch?v=IQofiPqhJ_s)
 
@@ -124,10 +125,10 @@ False
 
 ## Check if a number has a prime number of divisors
 
-Given an integer, implement a function, called ```prime_number_of_divisors(n)``` which returns True if the number of divisors of n is a prime number. False otherwise.
+Given an integer, implement a function, called `prime_number_of_divisors(n)`, which returns True if the number of `n`'s divisors is a prime number, False otherwise.
 
-For example, the divisors of 8 are 1,2,4 and 8, a total of 4. 4 is not a prime.
-The divisors of 9 are 1,3 and 9, a total of 3, which is a prime number.
+For example, the divisors of 8 are 1, 2, 4 and 8, a total of 4. 4 is not a prime number.
+The divisors of 9 are 1, 3 and 9, a total of 3. 3 is a prime number.
 
 ### Signature
 
@@ -149,11 +150,11 @@ True
 
 ## Are there n sevens in a row?
 
-Implement a function, called ```sevens_in_a_row(arr, n)```, which takes an array of integers ```arr``` and a number ```n > 0```
+Implement a function, called `sevens_in_a_row(arr, n)`, which takes an array of integers `arr` and a number `n > 0`.
 
-The function returns True, __if there are n consecutive sevens__ in ```arr```
+The function returns True, __if there are `n` consecutive sevens__ in `arr`.
 
-For example, if ```arr``` is ```[10, 8, 7, 6, 7, 7, 7, 20, -7]``` and n is 3, the function should return True. Otherwise, it returns False
+For example, if `arr` is `[10, 8, 7, 6, 7, 7, 7, 20, -7]` and `n` is 3, the function should return True, oOtherwise, it returns False.
 
 ### Signature
 
@@ -176,7 +177,7 @@ True
 
 ## Integer Palindromes
 
-A palindrome is а word or a phrase or a number, that when reversed, stays the same.
+A palindrome is а word, phrase or number that stays the same when reversed.
 
 For example, the following sequences are palindromes : "azobi4amma4iboza" or "anna".
 
@@ -185,7 +186,8 @@ A number palindrome is a number, that taken backwards, remains the same.
 
 For example, the numbers 1, 4224, 9999, 1221 are number palindromes.
 
-Implement a function, called ```is_int_palindrome(n)``` which takes an integer and returns True, if this integer is a palindrome.
+Implement a function, called `is_int_palindrome(n)`, which takes an integer and returns True,
+if this integer is a palindrome.
 
 ### Signature
 
@@ -211,9 +213,9 @@ False
 
 ## Number containing a single digit?
 
-Implement a function, called ```contains_digit(number, digit)``` which checks if ```digit``` is contained by the given ```number```.
+Implement a function, called `contains_digit(number, digit)` which checks if `digit` is contained in the given `number`.
 
-```digit``` and ```number``` are integers.
+`digit` and `number` are integers.
 
 ### Signature
 
@@ -237,9 +239,9 @@ False
 
 ## Number containing all digits?
 
-Implement a function, called ```contains_digits(number, digits)``` where ```digits``` is a __list of integers__ and a ```number``` is an integer.
+Implement a function, called `contains_digits(number, digits)` where `digits` is a __list of integers__ and `number` is an integer.
 
-The function should return True if __all__ ```digits``` are contained by ```number```
+The function should return True if __all__ `digits` are contained in `number`.
 
 ### Signature
 
@@ -265,13 +267,13 @@ True
 
 A number is called balanced, if we take the middle of it and the sums of the left and right parts are equal.
 
-For example, the number ```1238033``` is balanced, bacause it has a left part, equal to 123, and right part, equal ot 033.
+For example, the number `1238033` is balanced, because it's left part is `123` and right part is `033`.
 
-We have : ```1 + 2 + 3 = 0 + 3 + 3 = 6```
+We have : `1 + 2 + 3 = 0 + 3 + 3 = 6`.
 
-A number with only one digit is always balanced.
+A number with only one digit is always balanced!
 
-Implement a function, called ```is_number_balanced(n)``` which checks if the given number is balanced.
+Implement the function `is_number_balanced(n)` that checks if `n` is balanced.
 
 ### Signature
 
@@ -302,7 +304,7 @@ True
 
 ## Counting substrings
 
-Implement a function, called ```count_substrings(haystack, needle)``` which returns the count of occurrences of the string ```needle``` in the string ```haystack```.
+Implement the function `count_substrings(haystack, needle)`. It returns the count of occurrences of the string `needle` in the string `haystack`.
 
 __Don't count overlapped substings and take case into consideration!__
 For overlapping substrings, check the "baba" example below.
@@ -330,9 +332,10 @@ def count_substrings(haystack, needle):
 
 ## Vowels in a string
 
-Implement a function, called ```count_vowels(str)``` which returns the count of all vowels in the given string ```str```. __Count uppercase vowels as well!__
+Implement the function `count_vowels(str)`, which returns the count of all vowels in the string `str`.
+__Count uppercase vowels as well!__
 
-The vowels are ```aeiouy```.
+The English vowels are `aeiouy`.
 
 ### Signature
 
@@ -358,9 +361,10 @@ def count_vowels(str):
 
 ## Consonants in a string
 
-Implement a function, called `count_consonants(str)` which returns the count of all consonants in the given string `str`. __Count uppercase consonants as well!__
+Implement the function `count_consonants(str)`, which returns the count of all consonants in the string `str`.
+__Count uppercase consonants as well!__
 
-The consonants are ```bcdfghjklmnpqrstvwxz```.
+The English consonants are `bcdfghjklmnpqrstvwxz`.
 
 ### Signature
 
@@ -386,7 +390,7 @@ def count_consonants(str):
 
 ## Turn a number into a list of digits
 
-Implement a function, called ```number_to_list(n)``` which takes an integer ```n``` and returns a list, containing the digits of ```n```
+Implement the function `number_to_list(n)`, which takes an integer `n` and returns a list, containing the digits of `n`.
 
 ### Signature
 
@@ -408,7 +412,7 @@ def number_to_list(n):
 
 ## Turn a list of digits into a number
 
-Implement a function, called ```list_to_number(digits)``` which takes a list of digits (integers) and returns the number, containing those digits.
+Implement the function `list_to_number(digits)`, which takes a list of integers - `digits` and returns the number, containing those digits.
 
 ### Signature
 
@@ -430,9 +434,9 @@ def list_to_number(digits):
 
 ## Biggest difference between two numbers
 
-Implement a function, called ```biggest_difference(arr)```, which takes an array of integers and returns the biggest difference between any two numbers from the array.
+Implement the function `biggest_difference(arr)`, which takes an array of integers - `arr` and returns the biggest difference between any two numbers from the array.
 
-For every two elements from the array ```a``` and ```b```, we are looking for the minimum of ```a - b``` or ```b - a```
+For every two elements from the array `a` and `b`, we are looking for the minimum of `a - b` or `b - a`.
 
 ### Signature
 
@@ -456,7 +460,7 @@ def biggest_difference(arr):
 
 ## Increasing sequence?
 
-Implement a function, called ```is_increasing(seq)``` where ```seq``` is a list of integers.
+Implement the function `is_increasing(seq)` where `seq` is a list of integers.
 
 The function should return True, if the given sequence is monotonously increasing.
 
@@ -464,7 +468,7 @@ And before you skip this problem, because of the math terminology, let me explai
 
 > A sequence is monotonously increasing if for every two elements a and b, that are next to each other (a is before b), we have a < b
 
-For example, ```[1,2,3,4,5]``` is monotonously increasing while ```[1,2,3,4,5,1]``` is not.
+For example, `[1,2,3,4,5]` is monotonously increasing, but `[1,2,3,4,5,1]` is not.
 
 ### Signature
 
@@ -488,7 +492,7 @@ False
 
 ## Descreasing sequence?
 
-Implement a function, called ```is_decreasing(seq)``` where ```seq``` is a list of integers.
+Implement the function `is_decreasing(seq)` where `seq` is a list of integers.
 
 The function should return True, if the given sequence is monotonously decreasing.
 
@@ -496,7 +500,7 @@ And before you skip this problem, because of the math terminology, let me explai
 
 > A sequence is monotonously decreasing if for every two elements a and b, that are next to each other (a is before b), we have a > b
 
-For example, ```[5,4,3,2,1]``` is monotonously decreasing while ```[1,2,3,4,5,1]``` is not.
+For example, `[5,4,3,2,1]` is monotonously decreasing, but `[1,2,3,4,5,1]` is not.
 
 ### Signature
 
@@ -520,7 +524,7 @@ False
 
 ## Zero Insertion
 
-Given an integer, implement a function, called `zero_insert(n)`, which returns a new integer, constructed by the following algorithm:
+Given an integer, implement the function `zero_insert(n)`, which returns a new integer, constructed by the following algorithm:
 
 * If two neighboring digits are the same (like `55`), insert a 0 between them (`505`)
 * Also, if we add two neighboring digits and take their module by 10 (`% 10`) and the result is 0 - add 0 between them.
@@ -550,7 +554,7 @@ You are given a `NxM` matrix  of integer numbers.
 
 Implement a function, called `sum_matrix(m)` that returns the sum of all numbers in the matrix.
 
-The matrix will be represented as nested lists in python.
+The matrix will be represented as nested lists in Python.
 
 ### Examples:
 
@@ -625,7 +629,7 @@ We can see that if we drop the bomb at `(1, 1)` or `(2, 1)`, we will do the most
 
 A hack number is an integer, that matches the following criteria:
 
-* The number, represented in binary, is a palindrom
+* The number, represented in binary, is a palindrome
 * The number, represented in binary, has an odd number of 1's in it
 
 Example of hack numbers:
@@ -649,7 +653,7 @@ Implement a function, called `next_hack(n)` that takes an integer and returns th
 
 ## NaN Expand
 
-In most programming languages, `NaN` stands for `Not a Number`
+In most programming languages, `NaN` stands for `Not a Number`.
 
 If we take a look at the following JavaScript code:
 
@@ -659,7 +663,7 @@ typeof NaN === 'number' // true
 
 We will see that in JavaScript, `NaN` stands for `Not a NaN`, which is recursive by nature.
 
-Implement a python function, called `nan_expand(times)`, which returns the expansion of `NaN` (In JavaScript terms :P) that many `times`
+Implement a Python function, called `nan_expand(times)`, which returns the expansion of `NaN` (In JavaScript terms :P) that many `times`.
 
 For example:
 
@@ -683,11 +687,12 @@ For example:
 
 ## Iterations of NaN Expand
 
-Implement a function, called `iterations_of_nan_expand(expanded)` that takes a string `expanded`, which is an unkown iteration of NaN Expand (check the problem for more information)
+Implement a function, called `iterations_of_nan_expand(expanded)` that takes a string `expanded`,
+which is an unkown iteration of NaN Expand (check the problem for more information)
 
-The function should return the number of iterations that have been made, in order to get to `expanded`
+The function should return the number of iterations that have been made, in order to get to `expanded`.
 
-For example, if we have `"Not a Not a Not a NaN"` - this is the 3rd iteration of `NaN`
+For example, if we have `"Not a Not a Not a NaN"` - this is the 3rd iteration of `NaN`.
 
 **If `expanded` is not a valid NaN expand string, the function should return false! (This is the hard part)**
 
@@ -708,7 +713,7 @@ False
 
 ## Integer prime factorization
 
-Given an integer ```n```, we can factor it in the following form:
+Given an integer `n`, we can factor it in the following form:
 
 > n = p1^a1 * p2^a2 * ... * pn^an
 
@@ -722,7 +727,7 @@ Lets see few examples
 > 25 = 5^2
 > 356 = 2^2 * 89 ^ 1
 
-Implement a function, called ```prime_factorization(n)``` which takes an integer and returns a list of tuples ```(pi, ai)```, which is the result of the factorization.
+Implement a function, called `prime_factorization(n)`, which takes an integer and returns a list of tuples `(pi, ai)` that is the result of the factorization.
 
 The list should be sorted in increasing order of the prime numbers.
 
@@ -749,9 +754,9 @@ def prime_factorization(n):
 ```
 ## Calculate coins
 
-This problem is from the [Python 2013 course in FMI](http://2013.fmi.py-bg.net/)
+This problem is from the [Python 2013 course in FMI](http://2013.fmi.py-bg.net/).
 
-Implement a function, called ```calculate_coins(sum)``` where sum is a floating point number.
+Implement a function, called `calculate_coins(sum)` where sum is a floating point number.
 
 The function should return a dictionary, that represents a way to get the sum with minimal number of coins.
 
@@ -779,9 +784,9 @@ def calculate_coins(sum):
 
 This problem is from the Python 2013 course in FMI. [Link to original problem statement.](http://2013.fmi.py-bg.net/tasks/1)
 
-Implement a function, called ```what_is_my_sign(day, month)``` which takes two integers (one for the day and one for the month) and returns the name of the zodiac for the given time period.
+Implement a function, called `what_is_my_sign(day, month)` which takes two integers (one for the day and one for the month) and returns the name of the zodiac for the given time period.
 
-Consider the following zodiac table ([Or check wikipedia](http://en.wikipedia.org/wiki/Zodiac#Table_of_dates)) :
+Consider the following zodiac table ([Or check wikipedia](http://en.wikipedia.org/wiki/Zodiac#Table_of_dates)):
 
 * Aries: 21 March – 20 April
 * Taurus: 21 April – 21 May
