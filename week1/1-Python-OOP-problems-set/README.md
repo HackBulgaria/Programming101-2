@@ -141,3 +141,29 @@ store.sell_product(smarthphone) # True
 
 store.total_income() # 640
 ```
+
+## Employee Hierarchy
+Your task is to implement payroll processing for different kinds of employees.
+- Hourly employees get paid an hourly rate, but if they work more than 40 hours per week, the excess is paid at “time and a half”.
+- Salaried employees get paid their salary, no matter how many hours they work.
+- Managers are salaried employees who get paid a salary and a bonus.
+
+Your program should compute the pay for a collection of employees. For each employee, ask for the number of hours worked in a given week, then display the wages earned
+
+__Organize the classes into an inheritance hierarchy.__
+
+All employees have a name. What about the salaries? Hourly employees have an hourly wage, whereas salaried employees have an annual sal­ary. While it would be possible to store these values in an instance variable of the superclass, it would not be a good idea. The resulting code, which would need tomake sense of what that number means, would be complex and error-prone.
+Instead, HourlyEmployee objects will store the hourly wage and SalariedEmployee objects will
+store the annual salary. Manager objects need to store the weekly bonus.
+
+In our sample program, we populate a list of employees and compute the weekly salaries:
+```python
+staff = []
+staff.append(HourlyEmployee("Morgan, Harry", 30.0))
+staff.append(SalariedEmployee("Lin, Sally", 52000.0))
+staff.append(Manager("Smith, Mary", 104000.0, 50.0))
+for employee in staff :
+    hours = int(input("Hours worked by " + employee.getName() + ": "))
+    pay = employee.weeklyPay(hours)
+    print("Salary: %.2f" % pay)
+```
