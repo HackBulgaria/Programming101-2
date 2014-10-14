@@ -120,7 +120,7 @@ class Panda:
         self.name = name
         self.weight = weight
         Panda.total_pandas_mass += weight
-        Panda.all_pandas.append(name)
+        Panda.all_pandas.append(self)
 
     def __repr_(self):
         return self.name
