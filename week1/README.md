@@ -204,7 +204,7 @@ class KungFuPanda(Panda):
         print("Bam bam!")
 
 
-po = KungFuPanda(5, 260, -1)
+po = KungFuPanda("Po", 5, 700, 10)
 po.eat() # Nomm nomm nomm! Bamboo.
 ```
 
@@ -228,7 +228,7 @@ class KungFuPanda(Panda):
         self._get_fatter()
         print("Nomm nomm nomm! Rice.")
 
-po = KungFuPanda(5, 260, -1)
+po = KungFuPanda("Po", 5, 700, 10)
 po.eat() # Nomm nomm nomm! Rice.
 ```
 
