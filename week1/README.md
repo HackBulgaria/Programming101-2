@@ -1,47 +1,91 @@
-# Object Oriented Programming in Python
+# Object Oriented Programming
 
-Python is a very interesting language and it has a lot of specifics. You can do a lot of hacky tings with it. We are not going to show all of the specifics and the hackness. If you are interested in it we recommend you the one and only python course at FMI - it rocks!.
+Object Oriented Programming is a programming paradigm, that's all about representing concepts with
+objects, classes, methods and members.
 
-This week introduces you to object-oriented programming, an important technique for writing complex programs. In an object-oriented program, you don't simply manipulate numbers and strings, but you work with objects that are meaningful for your application. Objects with the same behavior are grouped into classes. A programmer provides the desired behavior by specifying and implementing methods for these classes. At the end of this week you will learn how to discover, specify, and implement your own classes, and how to use them in your programs.
+Popular object oriented languages are C++, Java, Python and Ruby.
 
-## Revision
 
-- Abstraction
-- Encapsulation
-- Inheritance
-- Polymorphism
+## The four principles of OOP
 
-If you can't explain one of these words. Go back to school!
+- Abstraction - wrapping common characteristics, states and functionality in abstract structures
+- Encapsulation - hiding implementation details and accessing functionality through public interfaces
+- Inheritance - reusing code while creating superstructures, also known as being DRY*
+- Polymorphism - the provision of a single interface to entities of different types
 
-## Build your first class in python
+
+## Glossary
+
+The fancy words we're going to use.
+
+* Class - an abstraction (ex. Person, Vehicle..)
+* Object - an instance of class
+* Member/field - a class variable
+* Method - a class function
+* DRY - Don't Repeat Yourself
+* WET - We Enjoy Typing (opposite of DRY)
+
+
+# Python OOP by example
+
+## Creating a class (abstraction)
 
 ```python
 class Panda:
-    def __init__(self, weight, name, age):
-        self.weight = weight
+
+    def __init__(self, name, age, weight):
         self.name = name
         self.age = age
+        self.weight = weight
 
-    
-    def _get_fatter(self):
+    def _get_buff(self):
         if self.weight < 1000:
             self.weight += 1
-    
-    def eat_bamboo(self):
-        self._get_fatter()
-        print("Nomm nomm nomm!")
 
-dimcho = Panda(1500, "Dimcho", 10)
-print(dimcho.age)
-print(dimcho.eat_bamboo())
+    def eat_bamboo(self):
+        self._get_buff()
+        return "Nomm nomm nomm!"
+
+
+dimcho = Panda("Dimcho", 10, 1500)
+print(dimcho.age) # 10
+print(dimcho.eat_bamboo()) # "Nomm nomm nomm!"
 ```
 
-- We use __init__ method as a constructor
-- Every class method must take __self__ as a first argument
-- You can access the attributes in class methods using __self__
-- All methods that starts with _ are protected
+- We use __init__ method as a constructor, which is also a magic method
+- Every class method must have __self__ as the first parameter
+- You can access attributes and methods in same class methods using __self__
 
-## Magic methods that you can redefine for operators
+
+## Magic methods
+
+Can be implemented in classes, so you can use binary operators.
+
+```python
+class Panda:
+
+    def __init__(self, name, age, weight):
+        self.name = name
+        self.age = age
+        self.weight = weight
+
+    def _get_buff(self):
+        if self.weight < 1000:
+            self.weight += 1
+
+    def eat_bamboo(self):
+        self._get_buff()
+        return "Nomm nomm nomm!"
+
+    def __truediv__(self):
+        return "Това не е библейско"
+
+dimcho = Panda("Dimcho", 10, 1500)
+boko = Panda("Boko", 11, 1600)
+print(dimcho / boko) # "Това не е библейско"
+```
+
+Some of the magic methods. You can find more in the [Python data model](https://docs.python.org/3.4/reference/datamodel.html)
 
 ```python
 __eq__(self, other) # self == other
@@ -58,9 +102,38 @@ __xor__(self, other) # self ^ other
 __or__(self, other) # self | other
 ```
 
-## Static things 
+## Static methods and fields
 
-A self-explaining example.
+* Static fields are shared between all classes of that type. (class `Panda` in our case).
+* Static methods are neither obligated to have `self` as a first parameter, nor use objects from the same class as the static method's.
+But it's good to have Panda classes do only panda stuff! :panda_face:
+
+
+Static fields in action:
+
+```python
+class Panda:
+    all_pandas = []
+    total_pandas_mass = 0
+
+    def __init__(self, name, weight):
+        self.name = name
+        self.weight = weight
+        Panda.total_pandas_mass += weight
+        Panda.all_pandas.append(name)
+
+    def __repr_(self):
+        return self.name
+
+
+dimcho = Panda("Dimcho", 50)
+print(Panda.all_pandas()) # ['Dimcho']
+
+boko = Panda("Boko", 70)
+print(Panda.total_pandas_mass) # 120
+```
+
+Static methods in action:
 
 ```python
 class Panda:
@@ -75,55 +148,107 @@ class Panda:
     @staticmethod
     def print_all_pandas():
         for panda in Panda.all_pandas:
-            print panda.name
+            print(panda.name)
+
+    # Possible! But don't do so :(
+    @staticmethod
+    def calculate_difference(a, b):
+        return a - b
 
 dimcho = Panda("Dimcho")
 Panda.print_all_pandas() # Dimcho
+print(Panda.calculate_difference(10 - 5)) # 5
+# Again, don't make poor pandas do math please!
 ```
+
 
 ## Inheritance
 
-Another self-explaining example.
+Think of classes as math sets. `Panda` is a subset and `KungFuPanda` is a superset!
+
+To access methods and fields from a parent class use `super()`.
+
+### Extra glossary
+
+Parent class - also known as a base class (ex. Panda)
+Child class - also known as sub class (ex. KungFuPanda)
+
+
+**Creating a child class:**
 
 ```python
 class Panda:
-    def __init__(self, weight, name, age):
-        self.weight = weight
+
+    def __init__(self, name, age, weight):
         self.name = name
         self.age = age
+        self.weight = weight
 
-    
     def _get_fatter(self):
         if self.weight < 1000:
             self.weight += 1
-    
-    def eat_bamboo(self):
+
+    def eat(self):
         self._get_fatter()
-        print("Nomm nomm nomm!")
+        print("Nomm nomm nomm! Bamboo.")
 
 
-class KunkFuPanda(Panda):
-    def __init__(self, weight, name, age, skill):
-        Panda.__init__(self, weight, name, age)
+class KungFuPanda(Panda):
+
+    def __init__(self, name, age, weight, skill):
+        super().__init__(self, name, age, weight)
         self.skill = skill
 
     def fight(self):
-        self.weight -= 1    
+        self.weight -= 1
         print("Bam bam!")
+
+
+po = KungFuPanda(5, 260, -1)
+po.eat() # Nomm nomm nomm! Bamboo.
 ```
+
+In Python all methods are effectively virtual. This means we can override a parent method by just defining a method with the same name in a child class.
+That means we can make our `KungFuPanda`s eat rice!
+
+
+```python
+class KungFuPanda(Panda):
+
+    def __init__(self, name, age, weight, skill):
+        super().__init__(self, name, age, weight)
+        self.skill = skill
+
+    def fight(self):
+        self.weight -= 1
+        print("Bam bam!")
+
+    def eat(self):
+        self._get_fatter()
+        self._get_fatter()
+        print("Nomm nomm nomm! Rice.")
+
+po = KungFuPanda(5, 260, -1)
+po.eat() # Nomm nomm nomm! Rice.
+```
+
 
 ## Private and Protected
 
-- You don't have an actual privacy in python
-- Names that starts with _ are protected 
-- Names that starts with __ are private
+You don't have an actual privacy in Python. This means private fields can be accessed by everyone,
+but developers will know not to do so! (It also makes testing easier)
+
+* Names that starts with _ are private
+* Names that starts with __ are protected
+
 
 ```python
 class Panda:
     def __init__(self):
+        self._dna = 'pandish'
         self.__power = 42
 
 jorko = Panda()
+print(jorko._dna) # pandish
 print(jorko.__power) # AttributeError: 'Panda' object has no attribute '__power'
 ```
-
