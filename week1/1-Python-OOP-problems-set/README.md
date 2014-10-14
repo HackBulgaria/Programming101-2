@@ -7,14 +7,14 @@ When you initialize your object it should create an empty dictionary that holds 
 ```python
 self.money = {100:0, 50:0, 20:0, 10:, 5:0, 2:0, 1:0}
 ```
-__ We don't use coins in our cash desk.__
+__We don't use coins in our cash desk.__
 
 Interface:
 ```python
 my_cash_desk = CashDesk()
 ```
 
-### 2. take_money function
+### 2. take_money() function
 Implement a function called ``take_money()`` that takes one argument. That argument is a dictionary which contains notes that you take and amount of them. 
 
 Interface:
@@ -24,7 +24,7 @@ my_cash_desk.take_money({1:2, 50:1, 20:1})
 
 ### 3. total() function
 Implement a function called ``total()`` that takes no arguments. It returns an integer with the total amount of money that we have.
-https://www.youtube.com/watch?v=HIjU31bM2l0
+
 Interface:
 ```python
 my_cash_desk = CashDesk()
@@ -99,7 +99,7 @@ new_store = Store('Laptop.bg')
 new_store.load_new_products(new_smarthphone, 20)
 ```
 
-### 6. list_products function
+### 7. list_products function
 Implement a function called list_products(product_class). It takes one argument: product_class which is a class __not an object__. This function prints all of the products of a given class with the amount of each.
 
 Interface:
@@ -113,7 +113,7 @@ store.load_new_products(laptop, 10)
 store.list_products(Laptop) # HP HackBook - 10
 ```
 
-### 7. sell_product function
+### 8. sell_product function
 Implement a function called sell_product(product). It takes one argument and that is the the product that you want to sell. It this product is not in stock then return False else return True.
 
 
@@ -128,7 +128,7 @@ store.sell_product(smarthphone) # False
 ```
 
 
-### 8. total_income function
+### 9. total_income function
 Implement a function called total_income(). It takes no arguments. It returns the amount of money that our store has earn. Use __profit()__ function of every sold product.
 
 Interface:
