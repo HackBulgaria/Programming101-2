@@ -1,7 +1,7 @@
 # Python OOP problems set
 
-## Cash_desk - problem
-### 1. Make a simple class called Cash_desk that takes no arguments.
+## CashDesk - problem
+### 1. Make a simple class called CashDesk that takes no arguments.
 
 When you initialize your object it should create an empty dictionary that holds all kinds of note that exists: 
 ```python
@@ -11,7 +11,7 @@ __ We don't use coins in our cash desk.__
 
 Interface:
 ```python
-my_cash_desk = Cash_desk()
+my_cash_desk = CashDesk()
 ```
 
 ### 2. take_money function
@@ -27,7 +27,7 @@ Implement a function called ``total()`` that takes no arguments. It returns an i
 https://www.youtube.com/watch?v=HIjU31bM2l0
 Interface:
 ```python
-my_cash_desk = Cash_desk()
+my_cash_desk = CashDesk()
 my_cash_desk.take_money({1:2, 50:1, 20:1})
 my_cach_desk.total() # 72
 ```
@@ -39,7 +39,7 @@ This function only returns True or False and it __does not__ withdraws any money
 
 Interface:
 ```python
-my_cash_desk = Cash_desk()
+my_cash_desk = CashDesk()
 my_cash_desk.take_money({1:2, 50:1, 20:1})
 my_cach_desk.total() # 72
 my_cach_desk.can_withdraw_money(30) #False
