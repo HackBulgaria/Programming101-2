@@ -110,7 +110,7 @@ laptop = Laptop('HP HackBook', 1000, 1243, 1000, 4)
 store.load_new_products(smarthphone, 20)
 store.load_new_products(laptop, 10)
 
-store.list_products(Laptop) # HP HackBook - 10
+store.list_products(laptop) # HP HackBook - 10
 ```
 
 ### 8. sell_product function
@@ -140,6 +140,17 @@ store.sell_product(smarthphone) # True
 store.sell_product(smarthphone) # True
 
 store.total_income() # 640
+```
+
+## Fraction class
+Defines an immutable rational number with common arithmetic operations. 
+
+The `Fraction` class support arithmetic operations like +, -, <, >, ==.
+
+
+```python
+>>> a = Fraction(3, 4)
+
 ```
 
 ## Employee Hierarchy
