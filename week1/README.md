@@ -233,13 +233,13 @@ po.eat() # Nomm nomm nomm! Rice.
 ```
 
 
-## Private and Protected
+## Protected and private fields
 
-You don't have an actual privacy in Python. This means private fields can be accessed by everyone,
+You don't have an actual protected privacy in Python. This means protected fields can be accessed by everyone,
 but developers will know not to do so! (It also makes testing easier)
 
-* Names that starts with _ are private
-* Names that starts with __ are protected
+* Names that starts with _ are protected
+* Names that starts with __ are private
 
 
 ```python
