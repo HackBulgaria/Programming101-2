@@ -170,8 +170,8 @@ To access methods and fields from a parent class use `super()`.
 
 ### Extra glossary
 
-Parent class - also known as a base class (ex. Panda)
-Child class - also known as sub class (ex. KungFuPanda)
+* Parent class - also known as a base class (ex. Panda)
+* Child class - also known as sub class (ex. KungFuPanda)
 
 
 **Creating a child class:**
