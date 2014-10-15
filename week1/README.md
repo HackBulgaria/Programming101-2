@@ -52,6 +52,25 @@ print(dimcho.age) # 10
 print(dimcho.eat_bamboo()) # "Nomm nomm nomm!"
 ```
 
+We can also check if an object is the instance of a class.
+For example, let's say we have the class Human and we want to check if it's instance (also subclass) of class Object.
+
+```python
+class Human:
+
+    def __init__(self, name, age, weight):
+        self.name = name
+        ....
+
+
+gosho = Human('Gosho', 20, 70)
+print(isinstance(gosho, Human)) # True
+print(isistance(gosho, object)) # True
+print(isinstance(gosho, Panda)) # False
+```
+
+
+
 - We use __init__ method as a constructor, which is also a magic method
 - Every class method must have __self__ as the first parameter
 - You can access attributes and methods in same class methods using __self__
