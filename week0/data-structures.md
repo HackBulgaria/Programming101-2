@@ -40,7 +40,7 @@ Traceback (most recent call last):
 TypeError: 'tuple' object does not support item assignment
 ```
 
-The interface is identical to a list's. You can see it action [here](https://docs.python.org/3.4/tutorial/datastructures.html#tuples-and-sequences)
+The interface is identical to a list's. You can see it in action [here](https://docs.python.org/3.4/tutorial/datastructures.html#tuples-and-sequences)
 
 
 ## Set
