@@ -277,7 +277,6 @@ print(jorko.__power) # AttributeError: 'Panda' object has no attribute '__power'
 At last, let's show how we can manage all Pandas.
 
 ```python
-## Assuming that we already created a Human class
 class Panda:
 
     def __init__(self, name, age, weight):
@@ -288,14 +287,15 @@ class Panda:
     def eat(self):
         return "nomnom nom"
 
-class PandaCareTaker(Human):
 
-    def __init__(self, name, age, weight):
-        super().__init__(name, age, weight)
+class PandaCareTake():
+
+    .....
 
     def feed_panda(panda):
         panda.eat()
         print("I fed {}".format(panda.name))
+
 
 boko = Panda('Boko', 5, 200)
 jacky_chan = PandaCareTaker('Jacky', 60, 67)
