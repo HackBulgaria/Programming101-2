@@ -73,7 +73,8 @@ Interface:
 new_laptop = Laptop('HP HackBook', 1000, 1243, 1000, 4)
 ```
 
-### 4. Make a simple Smartphone class
+### 4. Make a simple Smartphone class### 5. Make a simple Store class
+
 Every smartphone object is like a normal product but it has display_size and mega_pixels. This class must inherit product class too.
 
 Interface:
@@ -82,7 +83,7 @@ new_smarthphone = Smartphone('Hack Phone', 500, 820, 7, 10)
 ```
 
 ### 5. Make a simple Store class
-Every store has just a name.
+Every store constructor accepts only a name argument.
 
 Interface:
 ```python
