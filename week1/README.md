@@ -252,3 +252,34 @@ jorko = Panda()
 print(jorko._dna) # pandish
 print(jorko.__power) # AttributeError: 'Panda' object has no attribute '__power'
 ```
+
+## Polymorphism
+
+At last, let's show how we can manage all Pandas.
+
+```python
+## Assuming that we already created a Human class
+class Panda:
+
+    def __init__(self, name, age, weight):
+        self.name = name
+        self.age = age
+        self.weight = weight
+
+    def eat(self):
+        return "nomnom nom"
+
+class PandaCareTaker(Human):
+
+    def __init__(self, name, age, weight):
+        super().__init__(name, age, weight)
+
+    def feed_panda(panda):
+        panda.eat()
+        print("I fed {}".format(panda.name))
+
+boko = Panda('Boko', 5, 200)
+jacky_chan = PandaCareTake('Jacky', 60, 67)
+
+jacky_chan.feed_panda(boko) # I fed Boko
+```
