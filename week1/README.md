@@ -279,7 +279,7 @@ class PandaCareTaker(Human):
         print("I fed {}".format(panda.name))
 
 boko = Panda('Boko', 5, 200)
-jacky_chan = PandaCareTake('Jacky', 60, 67)
+jacky_chan = PandaCareTaker('Jacky', 60, 67)
 
 jacky_chan.feed_panda(boko) # I fed Boko
 ```
