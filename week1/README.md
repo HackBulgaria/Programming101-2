@@ -216,7 +216,7 @@ That means we can make our `KungFuPanda`s eat rice!
 class KungFuPanda(Panda):
 
     def __init__(self, name, age, weight, skill):
-        super().__init__(self, name, age, weight)
+        super().__init__(name, age, weight)
         self.skill = skill
 
     def fight(self):
