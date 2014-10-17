@@ -29,7 +29,7 @@ Interface:
 ```python
 my_cash_desk = CashDesk()
 my_cash_desk.take_money({1:2, 50:1, 20:1})
-my_cach_desk.total() # 72
+my_cash_desk.total() # 72
 ```
 
 ### 4. can_withdraw_money() function
@@ -41,9 +41,9 @@ Interface:
 ```python
 my_cash_desk = CashDesk()
 my_cash_desk.take_money({1:2, 50:1, 20:1})
-my_cach_desk.total() # 72
-my_cach_desk.can_withdraw_money(30) #False
-my_cach_desk.can_withdraw_money(70) #True
+my_cash_desk.total() # 72
+my_cash_desk.can_withdraw_money(30) #False
+my_cash_desk.can_withdraw_money(70) #True
 ```
 
 ## Laptop.bg - problem
