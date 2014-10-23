@@ -258,7 +258,7 @@ H.##......
 ###.#####O
 ```
 
-### move
+### Problem 8 move()
 
 Now, implemented a method ```move(player_name, direction)``` where:
 
@@ -296,4 +296,83 @@ Here are the cases:
 * If you move outside the map - return False and don't make the move.
 * If you move into an enemy, create a new Fight and simulate it!
 
-## Dungeons and Pythons
+## Problem 9 spawn_weapons()
+Different weapons are described at the end of every dungeon file. They are described in this way: weapon_name damage critical_chance. Every weapon is described on a new line.
+
+Example:
+
+```text
+S.##......
+#.##..###.
+#.###.###.
+#.....###.
+###.#####S
+
+BigAxe 25 0.2
+SmallAxe 19 0.7
+```
+
+Your task is to load this weapons and to spawn it in a random places.
+
+__For example:__
+
+```
+>>> from dungeon import Dungeon
+>>> map = Dungeon("basic_dungeon.txt")
+>>> map.print_map()
+S.##..W...
+#.##..###.
+#.###.###.
+#...W.###.
+###.#####S
+```
+
+We mark a weapon on the map with __W__ while printing the map.
+
+If a player gets to the weapons it automatically takes that weapon.
+
+## Problem 10 start_fight()
+If Ork and Hero gets in the same position they automatically start a fight until one of them is dead. Dead characters dose not show on the map.
+
+__For example:__
+
+```
+>>> from dungeon import Dungeon
+>>> map = Dungeon("basic_dungeon.txt")
+>>> map.print_map()
+S.W.W.S
+>>> map.spawn("player_1", some_hero_instance)
+>>> map.spawn("player_2", some_orc_instance)
+>>> map.print_map()
+H.W.W.O
+>>> map.move("player_1", "right")
+>>> map.move("player_1", "right")
+Weapon Equipped
+>>> map.move("player_1", "right")
+>>> map.move("player_1", "left")
+>>> map.move("player_1", "left")
+Weapon Equipped
+>>> map.move("player_1", "left")
+Characters are fighting...
+player_1 won!
+>>> map.print_map()
+...H...
+```
+
+## Problem 10 Console input wrapper
+So all that classes and functions that you made were tested by unit tests. It is time make a new class called GameInteractor which interacts with you by the console. 
+
+__The idea of this class is to make that game playable. This task is not mandatory! Do it if you have finished everything else!__
+
+You have to implement commands such as:
+```
+load_map
+show_map
+spawn_weapons
+make_new_hero Bron 100 
+move Bron left
+show_map
+....
+```
+
+You don't have to test this class with unittests. Actually you can't test this in an easy way. 
