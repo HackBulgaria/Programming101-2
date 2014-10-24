@@ -1,6 +1,6 @@
 # Music Library
 
-We are going to make a music library program. __DONT FORGET TO USE TTD!__
+We are going to make a music library program. __DONT FORGET TO USE TDD!__
 
 ## Song class
 We need a song class with the following fields
@@ -33,6 +33,18 @@ This function takes one argument that is a number between 0 and 5. It removes al
 
 ### remove_bad_quality()
 It removes all the songs that are with a low bitrate.
+
+### show_artists()
+This function takes no arguments. It returns a list of all artists in the current playlist. __Artists must not duplicate!__
+
+### __str__()
+Redefine this function to return all songs with their artist and title and time.
+
+__Example:__
+```
+ACDC Hells Bells - 05:09
+ACDC Baby, Please Don't Go - 03:51
+```
 
 ### save() and load() playlists
 It is time to save our playlist on the file system. We are going to use json files for that.
