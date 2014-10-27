@@ -15,6 +15,7 @@ __Example:__
 >>> python3 team_matcher.py
 Hello, you can use one the the following commands:
 list_courses - this lists all the courses that are available now.
+match_teams <course_id>, <team_size>, <group_time>
 
 list_courses
 Here are the courses:
@@ -32,7 +33,7 @@ Match command takes three arguments __course_id__, __team_size__, __group_time__
 __Example:__
 ```
 >>> python3 team_matcher.py
-Hello, you can use one the the following commands:
+Hello, you can use one the following commands:
 list_courses - this lists all the courses that are available now.
 match_teams <course_id>, <team_size>, <group_time>
 
