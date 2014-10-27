@@ -2,9 +2,9 @@
 
 As every nice company we have an API too. https://hackbulgaria.com/api/students/
 
-It returns all the students with their courses, github accounts and a boolean filed that shows if they are in the classroom now.
+It returns all the students with their courses, group, github accounts and a boolean filed that shows if they are in the classroom now.
 
-Our task is to make a console application that uses this information. To match students in our classroom in teams.
+Our task is to make a console application that uses this information. To match students in our classroom in __random__ teams.
 
 ## 1. List all courses:
 
