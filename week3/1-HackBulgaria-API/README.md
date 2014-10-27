@@ -6,6 +6,8 @@ It returns all the students with their courses, group, github accounts and a boo
 
 Our task is to make a console application that uses this information. To match students in our classroom in __random__ teams.
 
+To get informations for a remote host we are going to use: http://docs.python-requests.org/en/latest/
+
 ## 1. List all courses:
 
 Using the information from the API, list all the courses that are available now.
