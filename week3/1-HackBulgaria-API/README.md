@@ -28,9 +28,11 @@ Here are the courses:
 
 ```
 
+__You generate your ids.__
+
 ## Match command
 
-Match command takes three arguments __course_id__, __team_size__, __group_time__ 1/2 and matches people in a groups of __team_size__ people.
+Match command takes three arguments __course_id__, __team_size__, __group_time__ (1 or 2) and matches people in a groups of __team_size__ people.
 
 __Example:__
 ```
@@ -51,4 +53,3 @@ Stefan Ivanov
 ```
 
 __match_teams 1 2 1__ This will match teams of people from course 1 (programing 101 v2 for example). Each team will be of 2 people and all of the people will be from the eary group (group_time = 1)
-
