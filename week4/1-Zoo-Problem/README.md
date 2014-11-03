@@ -70,7 +70,7 @@ The json contains the following fields:
 (when the species gets to average weight, it stops growing)
 * food/weight ratio - how much does the species eat (in kilos) per weight (also in kilos)
 
-__The ages in the json are in months__
+__You should add the intersection of the `database.json` keys and `Animal` class members you saw above.In other words, add the members you don't have in your Animal class, but exist in `database.json`. Important: the animals' age is in months!__ 
 
 
 ## The program, simulating a zoo
