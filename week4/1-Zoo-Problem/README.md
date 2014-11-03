@@ -40,7 +40,7 @@ chance_of_dying = current_animal_year / life_expectancy
 * It has daily incomes depending on how much animals it has (the more animals it has, the more interesting it will be to go into that zoo, right?)
 * It has daily outcomes depending on how much do the animals eat (every food has its price)
 * Sadly, animals can die in the zoo :/
-* The animals reproduce half an year (6 months) after their gestation period is over.
+* The animals can reproduce again half an year (6 months) after their gestation period is over.
 
 ## How an animal is born
 
@@ -56,9 +56,10 @@ to reproduce again.
 * one kilo meat costs 4$
 * one kilo grass, foliage or bamboo costs 2$
 
-## Your program takes a database.json with animals
+## Your program takes a `database.json` with animals
 
-__The data in that json is very important!__
+__The data in that json is very important! And also you create the json!__
+
 
 The json contains the following fields:
 * species (for example, a tiger)
