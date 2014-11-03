@@ -56,9 +56,10 @@ to reproduce again.
 * one kilo meat costs 4$
 * one kilo grass, foliage or bamboo costs 2$
 
-## Your program takes a database.json with animals
+## Your program takes a `database.json` with animals
 
-__The data in that json is very important!__
+__The data in that json is very important! And also you create the json!__
+
 
 The json contains the following fields:
 * species (for example, a tiger)
@@ -70,7 +71,7 @@ The json contains the following fields:
 (when the species gets to average weight, it stops growing)
 * food/weight ratio - how much does the species eat (in kilos) per weight (also in kilos)
 
-__The ages in the json are in months__
+__The ages in the json are in days__
 
 
 ## The program, simulating a zoo
