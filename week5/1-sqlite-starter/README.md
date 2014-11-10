@@ -210,7 +210,7 @@ As you can see, connecting to sqlite is as simple as that!
 
 ## Problem 4 - Creating tables with Python
 
-If you see the [following file from the Polyglot problem](https://github.com/HackBulgaria/Polyglot/blob/master/polyglot_creation_script/create_db.py), you will see how a database is created!
+If you see this [tutorial you will see how to create a database](http://www.pythoncentral.io/introduction-to-sqlite-in-python/), you will see how a database is created!
 
 Now, implement a Python script, called ```create_company.py``` that creates the following table (Both structure and data):
 
