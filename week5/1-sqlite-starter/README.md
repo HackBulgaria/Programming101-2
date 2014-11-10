@@ -4,7 +4,7 @@ We are going to start with a GUI (Graphical User Interface) tool, for managing s
 
 If you are using Ubuntu, you can install [SQLite Database Browser](https://apps.ubuntu.com/cat/applications/sqlitebrowser/), which is simple enough for our needs!
 
-Now, go back to the [Polyglot repository](https://github.com/HackBulgaria/Polyglot), and locate the ```polyglot.db``` file and open it in the SQLite Database Browser!
+Now, go back to the [Polyglot repository](https://github.com/HackBulgaria/Programming101-2/tree/master/week1/0-Polyglot), and locate the ```polyglot.db``` file and open it in the SQLite Database Browser!
 
 When the file is loaded, take a look at the tables.
 
