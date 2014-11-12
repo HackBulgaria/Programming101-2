@@ -36,3 +36,4 @@ We are going to tackle with sqlite:
 * Check the Python documentation for sqlite - http://docs.python.org/2/library/sqlite3.html
 * You can check the web page for sqlite for better understanding it - https://sqlite.org/
 * A very good tutorial on sqlite - http://www.pythoncentral.io/series/python-sqlite-database-tutorial/
+* A little tutorial on sqlite JOIN - http://www.techonthenet.com/sqlite/joins.php
