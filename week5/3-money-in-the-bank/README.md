@@ -44,6 +44,8 @@ You know that this is not good for security reasons. You have to store the passw
 
 Write some tests to proof your work.
 
+You would find this useful -> http://www.pythoncentral.io/hashing-strings-with-python/
+
 ## 5. Hide passwords while typing
 
 As a UI (User Interface)  of your application you are using the console.
