@@ -323,12 +323,3 @@ session.commit()
 ivo = session.query(Student).filter(Student.name == "Ivo").one()
 ivo.grades.append(Grade(value=6))
 
-# And now, lets see the avg of grades of Rado:
-from sqlalchemy import func
-
-avg_grades = session.query(func.avg(Grade.value)).\
-    filter(Student.id == ivo.id).\
-    one()
-print(avg_grades)
-
-```
