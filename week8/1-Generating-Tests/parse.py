@@ -19,13 +19,13 @@ def compose(f, g):
 
 
 def main():
-    contents = get_file("test.dsl")
+    contents = get_file("is_prime_test.dsl")
 
     print(compose(unlines, lines)(contents))
 
-    # contets = lines(get_file("test.dsl"))
-    # noEmptyLines = list(filter(is_empty_line, contets))
-    # print(unlines(noEmptyLines))
+    contets = lines(get_file("is_prime_test.dsl"))
+    noEmptyLines = list(filter(is_empty_line, contets))
+    print(unlines(noEmptyLines))
 
 
 if __name__ == '__main__':
