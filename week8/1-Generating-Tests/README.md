@@ -46,6 +46,13 @@ if __name__ == '__main__':
     unittest.main()
 ```
 
+## Names of files and classes
+
+If our DSL file is named `is_prime_test.dsl`, then:
+
+* The test file should be called `is_prime_test.py`
+* The class should be called `IsPrimeTest`
+
 ## Different asserts
 
 You should be smart about the asserts.
